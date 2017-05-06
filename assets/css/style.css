@@ -7,7 +7,7 @@
 }
 
 .main-wrapper{
-	background: url('../images/bg.jpg');
+	background-image: url('../images/bg.jpg') ;
 	height: 650px;
 	background-size: cover;
 }
@@ -17,12 +17,15 @@ nav{
 	box-shadow: none;
 	height: auto;
 	padding-top:20px; 
+	z-index: 40;
 }
 
 
 .nav-wrapper *{
 	transform: scale(1.3)
 }
+
+
 .menu-ham{
 	margin-left: 20px;
 }
@@ -30,9 +33,8 @@ nav{
 .heading{
 	color: #fff;
 	text-align: center;
-	padding-top: 14%;
-	
-	width: 60%;
+	margin-top: 14%;
+
 }
 
 .heading h2{
@@ -126,6 +128,10 @@ nav{
 	margin-top: 6%;
 }
 
+.sec-section .right{
+		margin-top: 15%;
+}
+
 .third-sec{
 	margin-top: 5%;
 }
@@ -135,12 +141,14 @@ nav{
 	height: auto;
 }
 
+
+
 .fourth-sec{
 	color: #fff;
 	text-align: center;
 	padding-bottom: 8%;
-	padding-top: 5%;
-	margin-top: 5%;
+	
+	margin-top: 4%;
 }
 
 .fifth-sec{
@@ -198,7 +206,6 @@ nav{
 	background-color: #232732;
 	color: #fff;
 	text-align: center;
-	padding-top: 1%;
 	padding-bottom: 8%;
 	margin-top: 1%;
 
@@ -212,6 +219,7 @@ nav{
 .eight-sec{
 	text-align: center;
 	margin-top: 8%;
+	margin-bottom: 5%;
 }
 
 .eight-sec .row{
@@ -313,3 +321,48 @@ footer a{
 	color:white;
 	transition: 0.5s
 }
+
+.tell-me-more-btn{
+	background-color: #d33d5c;
+	line-height: 53px;
+}
+
+.tell-me-more-btn:focus{
+		background-color: #d33d5c;
+}
+
+.tell-me-more-btn:hover{
+	background-color: #fff;
+	color: #232732;
+	transition: 0.5s;
+}
+
+
+.abc li{
+	padding-bottom: 10px;
+}
+footer ul a:hover{
+	text-decoration: underline;
+
+}
+
+
+.slide_in{
+	transform: translateY(50px);
+	opacity: 0;
+  	animation: slide-in 1.3s ease forwards;
+}
+
+.already-visible {
+  transform: translateY(0);
+  opacity: 1;
+  animation: none;
+}
+.slide_in:nth-child(even) {
+  animation-duration:1s;
+}
+
+@keyframes slide-in {
+  to { opacity: 1;  transform: translateY(0);}
+}
+
