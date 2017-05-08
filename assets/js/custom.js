@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	     $('.carousel').carousel();
+
 	     $('.carousel.carousel1').carousel({indicators: true});
 
 /* for animations on page scroll*/
@@ -52,5 +52,7 @@ win.scroll(function(event) {
 		event.preventDefault();
 		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000, 'swing');
 	});
+
+ $('select').material_select();
 
 });
