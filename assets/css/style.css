@@ -217,6 +217,10 @@ nav{
 	margin-top: 8%;
 }
 
+.fifth-sec .card .card-content{
+	text-align: center;
+}
+
 .carousel h3{
 	font-family: "Lato", sans-serif;
 
