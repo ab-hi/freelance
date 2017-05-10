@@ -48,6 +48,106 @@ win.scroll(function(event) {
   
 });
 
+
+
+var cards_left = $(".slide-in-left");
+
+
+
+cards_left.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible-left"); 
+  } 
+});
+
+win.scroll(function(event) {
+  
+  cards_left.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("slide_in_left"); 
+    } 
+
+  });
+  
+});
+
+var cards_right = $(".slide-in-right");
+
+
+
+cards_right.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible-right"); 
+  } 
+});
+
+win.scroll(function(event) {
+  
+  cards_right.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("slide_in_right"); 
+    } 
+
+  });
+  
+});
+
+var cards_bounce = $(".slide-in-bounce");
+
+
+
+cards_bounce.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible-right"); 
+  } 
+});
+
+win.scroll(function(event) {
+  
+  cards_bounce.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("animated lightSpeedIn"); 
+    }  
+
+  });
+  
+});
+
+
+var cards_roll = $(".slide-in-roll");
+
+
+
+cards_roll.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible-right"); 
+  } 
+});
+
+win.scroll(function(event) {
+  
+  cards_roll.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("animated rollIn"); 
+    }  
+
+  });
+  
+});
+
+
+
+
+
+
  $(".scroll").click(function(event){		
 		event.preventDefault();
 		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000, 'swing');

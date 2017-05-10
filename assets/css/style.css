@@ -213,6 +213,10 @@ nav{
 	margin-top: 5%;
 }
 
+.fifth-sec .row .col{
+	margin-top: 8%;
+}
+
 .carousel h3{
 	font-family: "Lato", sans-serif;
 
@@ -411,6 +415,47 @@ footer ul a:hover{
   to { opacity: 1;  transform: translateY(0);}
 }
 
+
+.slide_in_left{
+	transform: translateX(-25%	);
+	opacity: 0;
+  	animation: slide_in_left 1.3s ease forwards;
+}
+
+.already-visible-left {
+  transform: translateX(0);
+  opacity: 1;
+  animation: none;
+}
+.slide_in_left:nth-child(even) {
+  animation-duration:1s;
+}
+
+@keyframes slide_in_left {
+  to { opacity: 1;  transform: translateX(0);}
+}
+
+
+.slide_in_right{
+	transform: translateX(25%);
+	opacity: 0;
+  	animation: slide_in_right 1.3s ease forwards;
+}
+
+.already-visible-right {
+  transform: translateX(0);
+  opacity: 1;
+  animation: none;
+}
+.slide_in_right:nth-child(even) {
+  animation-duration:1s;
+}
+
+@keyframes slide_in_right {
+  to { opacity: 1;  transform: translateX(0);}
+}
+
+
 @-moz-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -moz-transform: translateY(0);
@@ -429,14 +474,17 @@ footer ul a:hover{
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+    color: #fff;
   }
   40% {
     -webkit-transform: translateY(-25px);
     transform: translateY(-25px);
+      color: #000;
   }
   60% {
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
+    color: #777;
   }
 }
 @keyframes bounce {
@@ -460,7 +508,7 @@ footer ul a:hover{
     -ms-transform: translateY(-15px);
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
-           color: #000;
+           color: #777;
 
   }
 }
@@ -509,10 +557,25 @@ footer ul a:hover{
 	height: 53px;
 	width: 100%;
 	margin-top: 5%;
+	color: #fff;
 }
 
 .ninth-sec .btn:hover{
 	background-color: white;
 	color: #232732;
 	transition: 0.5s;
+}
+
+.ninth-sec .input-field{
+	margin-top: 7%;
+}
+
+.ninth-sec .btn i{
+	color: #fff;
+} 
+
+.ninth-sec .btn:hover i{
+	color: #232732;
+	transition: 0.5s;
+	transform: translateX(50%);
 }
