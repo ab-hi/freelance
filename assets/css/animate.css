@@ -589,7 +589,7 @@
 @keyframes fadeInDownBig {
   from {
     opacity: 0;
-    transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -200px, 0);
   }
 
   to {
@@ -600,6 +600,7 @@
 
 .fadeInDownBig {
   animation-name: fadeInDownBig;
+  animation-duration: 1.5s;
 }
 
 @keyframes fadeInLeft {
@@ -669,7 +670,7 @@
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 50%, 0);
   }
 
   to {
@@ -680,6 +681,7 @@
 
 .fadeInUp {
   animation-name: fadeInUp;
+  animation-duration: 1.8s;
 }
 
 @keyframes fadeInUpBig {

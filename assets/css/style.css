@@ -583,3 +583,18 @@ footer ul a:hover{
 	transition: 0.5s;
 	transform: translateX(50%);
 }
+
+
+.carousel .indicators .indicator-item{
+	background-color: rgba(0,0,0,0.35)
+}
+
+.carousel .indicators .indicator-item.active{
+	background-color: #000;
+}
+
+.carousel-team {
+	height: 600px;
+	text-align: center;
+	margin-top: 0;
+}

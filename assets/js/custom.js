@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-	     $('.carousel.carousel1').carousel({indicators: true});
+	     $('.carousel.carousel1').carousel({indicators: true, padding:20});
+	     	     $('.carousel').carousel({dist: 0, indicators:true, shift:10, padding:100});
 
 /* for animations on page scroll*/
 
